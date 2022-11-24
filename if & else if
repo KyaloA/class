@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int age;
+    string name;
+
+    cout<< "Please Enter Your Name: ";
+    cin>> name;
+
+    cout<< "Please Enter" <<name + "'s age: ";
+    cin>> age;
+
+    if (age >= 7){
+        cout<<name + " is admitted to Grade School";
+    }
+    else if(age >=5 && age <=6){
+        cout<<name + " is admitted to Kindergarten";
+    }
+    else if(age >=3 && age<=4){
+        cout<< name + " is admitted to Pre-School";
+    }
+    else{
+        cout<<name + " Does not meet the required age";
+    }
+
+    return 0;
+}
