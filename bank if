@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int age, balance, length;
+    string name, status;
+
+    cout<< "Please enter the customer's name: ";
+    getline(cin, name);
+
+    cout<<"Please enter " <<name + "'s age: ";
+    cin>> age;
+
+    cout<< "How many months has " << name + " been a customer? ";
+    cin>> length;
+
+    cout<< "Enter " <<name + "'s bank balance";
+    cin>> balance;
+
+    cout<< "Please enter " <<name + "'s CRB status: ";
+    cin>> status;
+
+    if(age> 22 && length> 6 && balance> 50000 && status == "good"){
+        cout<< "Approved" <<name + " qualifies for a loan";
+    }
+    else{
+        cout<< "Denied! " <<name + " Does not qualify for a loan";
+    }
+
+    return 0;
+}
